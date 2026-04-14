@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt | Ochrana digitální identity</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".idea/styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">BOLT<span></span></div>
+    <ul class="nav-links">
+        <li><a href="#hrozby">Hrozby</a></li>
+        <li><a href="#sluzby">Ochrana</a></li>
+        <li><a href="#tym">Náš tým</a></li>
+        <li><a href="#sos">SOS Linka</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <h1>Vaše identita je unikát. <br>Nedovolte ji zkopírovat.</h1>
+    <p>Bolt chrání jednotlivce před deepfake útoky a krádeží digitální identity pomocí pokročilé AI analýzy.</p>
+    <a href="#sluzby" class="hero-btn">Zjistit více</a>
+</header>
+
+<section id="hrozby">
+    <h2>Digitální hrozby 2026</h2>
+    <div class="threats-container">
+        <div class="threat-card">
+            <h3>Deepfake Video/Audio</h3>
+            <p>Útočníci dokáží simulovat hlas vašeho blízkého nebo šéfa. Bolt rozpozná syntetické frekvence, které lidské ucho neslyší.</p>
+        </div>
+        <div class="threat-card">
+            <h3>Krádež identity</h3>
+            <p>Vaše fotky z Instagramu stačí k vytvoření falešného profilu v bance. Monitorujeme podsvětí internetu 24/7.</p>
+        </div>
+    </div>
+</section>
+
+<section id="sluzby" class="services">
+    <h2>Ochrana na míru</h2>
+    <div class="services-grid">
+        <div class="service-item">
+            <i class="fas fa-fingerprint"></i>
+            <h3>Biometrický štít</h3>
+            <p>Dvoufázové ověření postavené na nezfalšovatelných datech.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-eye"></i>
+            <h3>DeepScan</h3>
+            <p>Nástroj pro okamžité prověření podezřelých videohovorů.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-user-shield"></i>
+            <h3>Privátní audit</h3>
+            <p>Kompletní vyčištění vaší digitální stopy na internetu.</p>
+        </div>
+    </div>
+</section>
+
+<section id="tym">
+    <h2>Experti za projektem</h2>
+    <div class="team-grid">
+        <div class="member">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" alt="Petr Bolt">
+            <h3>Petr Novák</h3>
+            <p>AI Architekt</p>
+        </div>
+        <div class="member">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Jana Bolt">
+            <h3>Jana Svobodová</h3>
+            <p>Etický Hacker</p>
+        </div>
+        <div class="member">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="Marek Bolt">
+            <h3>Marek Černý</h3>
+            <p>Specialista na OSINT</p>
+        </div>
+    </div>
+</section>
+
+<section id="sos">
+    <div class="sos-container">
+        <h2>SOS Linka: Nahlásit incident</h2>
+
+
+        <form class="sos-form">
+            <div class="form-group">
+                <label for="name">Jméno / Firma</label>
+                <input type="text" id="name" name="name" placeholder="Vaše jméno nebo název společnosti" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="vas@email.cz" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Popište incident...</label>
+                <textarea id="message" name="message" rows="5" placeholder="Co se stalo? (např. podezření na deepfake hovor, ukradený účet...)" required></textarea>
+            </div>
+
+            <button type="submit" class="sos-submit-btn">Odeslat hlášení</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

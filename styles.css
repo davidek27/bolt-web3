@@ -1,0 +1,332 @@
+:root {
+    --bolt-blue: #0056b3;
+    --bolt-dark: #1a1a1a;
+    --bolt-gray: #333333;
+    --bolt-light: #f4f4f4;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--bolt-dark);
+    line-height: 1.6;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background: var(--bolt-dark);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--bolt-blue);
+    position: absolute;
+    left: 10%;
+}
+
+.logo span { color: var(--bolt-blue); }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { color: var(--bolt-blue); }
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: var(--bolt-blue);
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 2px solid var(--bolt-blue);
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.hero-btn:hover {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+    transform: translateY(-3px);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background: var(--bolt-dark);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--bolt-blue);
+    position: absolute;
+    left: 10%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 900px) {
+    .logo {
+        position: static;
+        margin-bottom: 1rem;
+    }
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; max-width: 700px; margin-bottom: 2rem; opacity: 0.9; }
+
+/* Sekce Obecně */
+section { padding: 80px 10%; }
+h2 { font-size: 2.5rem; margin-bottom: 3rem; text-align: center; }
+
+/* Hrozby */
+.threats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.threat-card {
+    background: var(--bolt-light);
+    padding: 2rem;
+    border-left: 5px solid var(--bolt-blue);
+}
+
+/* Ochrana (Služby) */
+.services { background: var(--bolt-dark); color: var(--white); }
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+.service-item i { font-size: 3rem; color: var(--bolt-blue); margin-bottom: 1rem; }
+
+/* Tým */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    text-align: center;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    filter: grayscale(100%);
+}
+
+/* SOS Sekce s formulářem */
+.sos-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--bolt-light);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.sos-subtitle {
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    color: var(--bolt-gray);
+}
+
+.sos-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--bolt-dark);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--bolt-blue);
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+.sos-submit-btn {
+    background: var(--bolt-blue);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.sos-submit-btn:hover {
+    background: #004494;
+    transform: translateY(-2px);
+}
+
+/* Úprava loga a navigace z předchozího požadavku */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background: var(--bolt-dark);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--bolt-blue); /* Celé modré logo */
+    position: absolute;
+    left: 10%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0 auto; /* Navigace na střed */
+}
+
+@media (max-width: 768px) {
+    .sos-container {
+        padding: 1.5rem;
+    }
+    .logo {
+        position: static;
+        margin-bottom: 1rem;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
